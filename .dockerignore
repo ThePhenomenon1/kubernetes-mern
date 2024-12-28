@@ -1,0 +1,10 @@
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+secret.yaml
+kube-docker-test.js
+node_modules/
+.env

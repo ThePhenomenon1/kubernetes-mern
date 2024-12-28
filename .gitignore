@@ -1,0 +1,5 @@
+secret.yaml
+kube-docker-test.js
+node_modules/
+.env
+dist/
