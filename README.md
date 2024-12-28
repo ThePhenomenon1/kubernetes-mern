@@ -19,7 +19,7 @@ Ensure you have the following tools installed on your machine:
 
 ### 1. Clone the Repository
 Clone the project from GitHub:
-```bash
+bash
 git clone https://github.com/ThePhenomenon1/kubernetes-mern.git
 cd your-repo
 
