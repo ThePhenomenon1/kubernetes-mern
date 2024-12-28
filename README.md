@@ -23,14 +23,14 @@ bash
 git clone https://github.com/ThePhenomenon1/kubernetes-mern.git
 cd your-repo
 
-# 2. Pull Necessary Docker Images
+### 2. Pull Necessary Docker Images
 
 docker pull mongo:latest
 docker pull mongo-express:latest
 
-# 3. Generate Kubernetes Secrets
+### 3. Generate Kubernetes Secrets
 
-# Since secret.yaml is not included in the repository, you must generate the required secrets. Use the following steps:
+### Since secret.yaml is not included in the repository, you must generate the required secrets. Use the following steps:
 
 Generate a random username and password using Python:
 
@@ -46,7 +46,7 @@ kubectl create secret generic mongo-secret \
   --from-literal=mongo-user=<your-generated-mongo-user> \
   --from-literal=mongo-password=<your-generated-mongo-password>
 
-4. Configure Minikube
+### 4. Configure Minikube
 
 Start Minikube and set up your local Kubernetes cluster:
 
@@ -54,17 +54,17 @@ minikube start
 
 Deploy the Application
 
-1. Apply the Kubernetes manifests:
+### 1. Apply the Kubernetes manifests:
 
 kubectl apply -f mongo-app.yaml
 kubectl apply -f web-app.yaml
 
-2. Verify the deployments:
+### 2. Verify the deployments:
 
 kubectl get pods
 kubectl get services
 
-3. Access the application:
+### 3. Access the application:
 
 Forward the Mongo Express service to localhost:
 
