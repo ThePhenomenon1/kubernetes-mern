@@ -20,7 +20,7 @@ Ensure you have the following tools installed on your machine:
 ### 1. Clone the Repository
 Clone the project from GitHub:
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/ThePhenomenon1/kubernetes-mern.git
 cd your-repo
 
 # 2. Pull Necessary Docker Images
@@ -79,7 +79,7 @@ Notes
 
 Links
 
-    Clone the Project: https://github.com/your-username/your-repo.git
+    Clone the Project: https://github.com/ThePhenomenon1/kubernetes-mern.git
     GitHub Repository: View on GitHub
 
 License
