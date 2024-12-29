@@ -25,8 +25,8 @@ cd your-repo
 
 ### 2. Pull Necessary Docker Images
 
-docker pull mongo:latest
-docker pull mongo-express:latest
+    docker pull mongo:latest
+    docker pull mongo-express:latest
 
 ### 3. Generate Kubernetes Secrets
 
