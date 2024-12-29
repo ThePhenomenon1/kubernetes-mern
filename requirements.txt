@@ -1,3 +1,5 @@
 Docker
 Minikube
 kubectl
+
+# As Project complexity grows, expect requirement dependencies to increase exponentially here.
