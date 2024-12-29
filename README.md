@@ -34,41 +34,41 @@ cd your-repo
 
 Generate a random username and password using Python:
 
-import secrets
-print("mongo-user:", secrets.token_hex(12))
-print("mongo-password:", secrets.token_hex(12))
+    import secrets
+    print("mongo-user:", secrets.token_hex(12))
+    print("mongo-password:", secrets.token_hex(12))
 
 Save these values for later use.
 
 Create the Kubernetes Secret:
 
-kubectl create secret generic mongo-secret \
-  --from-literal=mongo-user=<your-generated-mongo-user> \
-  --from-literal=mongo-password=<your-generated-mongo-password>
+    kubectl create secret generic mongo-secret \
+      --from-literal=mongo-user=<your-generated-mongo-user> \
+      --from-literal=mongo-password=<your-generated-mongo-password>
 
 ### 4. Configure Minikube
 
 Start Minikube and set up your local Kubernetes cluster:
 
-minikube start
+    minikube start
 
 Deploy the Application
 
 ### 1. Apply the Kubernetes manifests:
 
-kubectl apply -f mongo-app.yaml
-kubectl apply -f web-app.yaml
+    kubectl apply -f mongo-app.yaml
+    kubectl apply -f web-app.yaml
 
 ### 2. Verify the deployments:
 
-kubectl get pods
-kubectl get services
+    kubectl get pods
+    kubectl get services
 
 ### 3. Access the application:
 
 Forward the Mongo Express service to localhost:
 
-kubectl port-forward svc/webapp-service 8081:8081
+    kubectl port-forward svc/webapp-service 8081:8081
 
 Open your browser and navigate to http://localhost:8081.
 
